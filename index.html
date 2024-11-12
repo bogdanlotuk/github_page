@@ -65,6 +65,7 @@
     }
 
     @media (max-width: 576px) {
+
       .contact-info {
         flex-direction: column;
         align-items: center;
@@ -85,7 +86,7 @@
       word-wrap: break-word;
     }
 
-    .list-unstyled {      
+    .list-unstyled {
       list-style: none;
     }
 
@@ -125,6 +126,7 @@
       .container {
         padding-left: 1rem;
         padding-right: 1rem;
+        padding-top: 2rem;
       }
     }
 
@@ -140,10 +142,14 @@
       border-radius: 5px;
       font-size: 16px;
       transition: background-color 0.3s ease;
+      opacity: 0.8;
+      z-index: 999;
     }
 
     .download-btn:hover {
       background-color: #45a049; /* Darker green */
+      color: white;
+      text-decoration: none;
     }
 
     /* Print styles */
@@ -151,7 +157,7 @@
       body {
         padding: 0;
       }
-      
+
       .container {
         max-width: 100%;
         width: 100%;
@@ -201,7 +207,7 @@
   <a href="cv.pdf" class="download-btn" download="cv.pdf">Download CV</a>
   <div class="container">
     <header class="row">
-      <div class="col-md-12">  
+      <div class="col-md-12">
         <h1 class="display-4">Bohdan Latkovskyi</h1>
         <div class="contact-info">
           <span>Calgary, Canada</span>
@@ -211,7 +217,7 @@
         </div>
       </div>
     </header>
-    
+
     <section class="row">
       <div class="col-md-12">
         <h2 class="section-heading">Professional Summary</h2>
@@ -220,7 +226,7 @@
         </p>
       </div>
     </section>
-    
+
     <section class="row">
       <div class="col-md-12">
         <h2 class="section-heading">Skills</h2>
@@ -243,11 +249,11 @@
         </ul>
       </div>
     </section>
-    
+
     <section class="row">
       <div class="col-md-12">
         <h2 class="section-heading">Work Experience</h2>
-        
+
         <div class="mb-4">
           <h3 class="job-title">User Support Technician (volunteer)</h3>
           <p class="company-date">Calgary Food Bank, Calgary, Canada | Jun 2024 – Present</p>
@@ -294,7 +300,7 @@
           <p class="company-date">2013 – 2015</p>
           <p>Master's degree, Electromechanical systems of automation</p>
         </div>
-        
+
         <div class="mb-3">
           <h3>Ivano-Frankivsk National Technical University of Oil and Gas</h3>
           <p class="company-date">2009 – 2011</p>
@@ -308,7 +314,7 @@
         </div>
       </div>
     </section>
-    
+
     <section class="row">
       <div class="col-md-12">
         <h2 class="section-heading">Certificates</h2>
@@ -322,14 +328,14 @@
         </div>
       </div>
     </section>
-    
+
     <section class="row">
       <div class="col-md-12">
         <h2 class="section-heading">Languages</h2>
         <p>English - upper intermediate, Ukrainian - native</p>
       </div>
     </section>
-    
+
     <section class="row">
       <div class="col-md-12">
         <h2 class="section-heading">Interests</h2>
