@@ -123,6 +123,24 @@
       }
     }
 
+    /* Style for the button */
+    .download-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      padding: 10px 20px;
+      background-color: #4CAF50; /* Green */
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    .download-btn:hover {
+      background-color: #45a049; /* Darker green */
+    }
+
     /* Print styles */
     @media print {
       body {
@@ -175,6 +193,7 @@
   </style>
 </head>
 <body>
+  <a href="resume.pdf" class="download-btn" download="cv.pdf">Download CV</a>
   <div class="container">
     <header class="row">
       <div class="col-md-12">  
