@@ -26,6 +26,33 @@
       margin: 0 auto;
     }
 
+    .fixed-wrapper {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 999;
+      display: flex;
+      justify-content: center;
+      pointer-events: none;
+    }
+
+    /* Button Container */
+    .button-container {
+      position: fixed;
+      /*top: 0;*/
+      top: 1rem;
+      /*right: -20px;*/
+      width: 100%;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 1rem;
+      z-index: 999;
+      pointer-events: none;
+      display: flex;
+      justify-content: right;
+    }
+
     h1 {
       text-align: center;
     }
@@ -40,9 +67,6 @@
       }
       h3 {
         font-size: 1.25rem !important;
-      }
-      .lead {
-        font-size: 1rem !important;
       }
     }
 
@@ -132,9 +156,6 @@
 
     /* Style for the button */
     .download-btn {
-      position: fixed;
-      top: 20px;
-      right: 20px;
       padding: 10px 20px;
       background-color: #4CAF50; /* Green */
       color: white;
@@ -144,7 +165,6 @@
       transition: background-color 0.3s ease;
       opacity: 0.9;
       z-index: 999;
-
     }
 
     .download-btn:hover {
@@ -205,7 +225,11 @@
   </style>
 </head>
 <body>
-  <a href="cv.pdf" class="download-btn" download="cv.pdf">Download CV</a>
+  <div class="fixed-wrapper">
+    <div class="button-container">
+      <a href="Bohdan_Latkovskyi_CV.pdf" class="download-btn" download="Bohdan_Latkovskyi_CV.pdf">Download CV</a>
+    </div>
+  </div>
   <div class="container">
     <header class="row">
       <div class="col-md-12">
@@ -324,7 +348,7 @@
           <p class="company-date">Jul 2024</p>
         </div>
         <div class="mb-3">
-          <h3>Comptia A+</h3>
+          <h3>CompTIA A+</h3>
           <p class="company-date">Sep 2024</p>
         </div>
       </div>
@@ -333,7 +357,8 @@
     <section class="row">
       <div class="col-md-12">
         <h2 class="section-heading">Languages</h2>
-        <p>English - upper intermediate, Ukrainian - native</p>
+        <p>English - upper intermediate</p>
+        <p>Ukrainian - native</p>
       </div>
     </section>
 
